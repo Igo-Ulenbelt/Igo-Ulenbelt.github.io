@@ -45,7 +45,6 @@ function render() {
     songs.forEach((song, idx) => {
         const tr = document.createElement("tr");
         const isPlaying = currentId === idx;
-        console.log(isPlaying);
         tr.innerHTML = `
             <td class="opacity-7-hover">
                 <a class="${isPlaying ? 'playing' : ''}" href="?id=${idx + 1}">${String(idx + 1).padStart(2, '0')}</a>
