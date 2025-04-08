@@ -25,6 +25,7 @@ function render() {
 
     const getIndex = (offset) => (currentId + offset + songs.length) % songs.length;
 
+    // Render images (same as before)
     [getIndex(-2), getIndex(-1), getIndex(0), getIndex(1), getIndex(2)].forEach((i, idx) => {
         const img = document.createElement("img");
         img.src = "assets/img/" + songs[i].image;
@@ -36,6 +37,7 @@ function render() {
         imageRow.appendChild(fig);
     });
 
+    // Set the current song in the audio player
     audioPlayer.src = "assets/songs/" + songs[currentId].audio;
     audioPlayer.onended = () => {
         currentId = getIndex(1);
@@ -45,10 +47,18 @@ function render() {
 
     songs.forEach((song, idx) => {
         const tr = document.createElement("tr");
+        const isPlaying = currentId === idx;
+        console.log(isPlaying);
         tr.innerHTML = `
-            <td class="opacity-7-hover"><a href="?id=${idx + 1}">${String(idx + 1).padStart(2, '0')}</a></td>
-            <td class="opacity-7-hover"><a href="?id=${idx + 1}">${song.title}</a></td>
-            <td class="opacity-7-hover"><a class="me-3" href="?id=${idx + 1}">${song.length}</a></td>
+            <td class="opacity-7-hover">
+                <a class="${isPlaying ? 'playing' : ''}" href="?id=${idx + 1}">${String(idx + 1).padStart(2, '0')}</a>
+            </td>
+            <td class="opacity-7-hover ${isPlaying ? 'playing' : ''}">
+                <a class="${isPlaying ? 'playing' : ''}" href="?id=${idx + 1}">${song.title}</a>
+            </td>
+            <td class="opacity-7-hover ${isPlaying ? 'playing' : ''}">
+                <a class="me-3 ${isPlaying ? 'playing' : ''}" href="?id=${idx + 1}">${song.length}</a>
+            </td>
         `;
         songTable.appendChild(tr);
     });

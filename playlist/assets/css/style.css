@@ -10,6 +10,10 @@ body{
     border-radius: 4px;
 }
 
+.playing{
+    color: greenyellow!important;
+}
+
 .black{
     background-color: rgb(31, 26, 26);
     width: 800px;
