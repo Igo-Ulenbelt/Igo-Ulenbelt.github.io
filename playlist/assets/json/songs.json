@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Spandau Ballet - Gold",
+    "image": "gold.jpeg",
+    "audio": "gold.mp3",
+    "length": "3:51"
+  },
+  {
+    "title": "Queen - Don't Stop Me Now",
+    "image": "dont_stop.jpeg",
+    "audio": "dont_stop.mp3",
+    "length": "3:29"
+  },
+  {
+    "title": "Arctic Monkeys - Why'd You Only Call Me When You're High",
+    "image": "call_high.jpeg",
+    "audio": "call_high.mp3",
+    "length": "2:41"
+  },
+  {
+    "title": "Cage The Elephant - Ain't No Rest For The Wicked",
+    "image": "no_rest.jpeg",
+    "audio": "no_rest.mp3",
+    "length": "3:33"
+  },
+  {
+    "title": "The Neighbourhood - Sweater Weather",
+    "image": "sweater_weather.jpeg",
+    "audio": "sweater_weather.mp3",
+    "length": "4:00"
+  },
+  {
+    "title": "Imagine Dragons - Believer",
+    "image": "believer.jpg",
+    "audio": "believer.mp3",
+    "length": "3:33"
+  },
+  {
+    "title": "Taio Cruz - Dynamite",
+    "image": "dynamite.jpg",
+    "audio": "dynamite.mp3",
+    "length": "3:22"
+  }
+]
