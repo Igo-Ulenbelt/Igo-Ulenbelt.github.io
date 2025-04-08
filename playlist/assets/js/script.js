@@ -65,3 +65,8 @@ function goToNext() {
     render();
     history.pushState(null, "", "?id=" + (currentId + 1));
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.prev').addEventListener('click', goToPrev);
+    document.querySelector('.next').addEventListener('click', goToNext);
+});
