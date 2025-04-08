@@ -24,8 +24,6 @@ function render() {
     songTable.innerHTML = "";
 
     const getIndex = (offset) => (currentId + offset + songs.length) % songs.length;
-
-    // Render images (same as before)
     [getIndex(-2), getIndex(-1), getIndex(0), getIndex(1), getIndex(2)].forEach((i, idx) => {
         const img = document.createElement("img");
         img.src = "assets/img/" + songs[i].image;
@@ -37,7 +35,6 @@ function render() {
         imageRow.appendChild(fig);
     });
 
-    // Set the current song in the audio player
     audioPlayer.src = "assets/songs/" + songs[currentId].audio;
     audioPlayer.onended = () => {
         currentId = getIndex(1);
