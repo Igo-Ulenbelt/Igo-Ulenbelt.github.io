@@ -54,4 +54,10 @@ text-decoration: none;
     border: none;
 }
 
+@media (prefers-color-scheme: dark) {
+    audio {
+        filter: invert(1);
+    }
+}
+
 
