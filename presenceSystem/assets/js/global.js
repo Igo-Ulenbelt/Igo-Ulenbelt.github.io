@@ -21,6 +21,11 @@ async function initialize() {
     createLesson();
 }
 
+async function refreshData() {
+    await loadData();
+    getTime(year, weekNumber, currentUser.id);
+}
+
 initialize();
 
 async function fetchAndMerge(name) {
@@ -375,6 +380,8 @@ function formatTheDate(dateString) {
 }
 
 function addAbsent(){
+    const modalElement = document.querySelector('#absentModal');
+    const modal = bootstrap.Modal.getOrCreateInstance(modalElement);
     const form = document.querySelector('#addAbsent');
 
     form.addEventListener('submit', function (e) {
@@ -409,7 +416,8 @@ function addAbsent(){
         };
 
         voegAfwezigheidToe(newAbsent);
-        form.submit();
+        refreshData();
+        modal.hide();
     });
 }
 
@@ -445,6 +453,8 @@ function parseTimeToMinutes(timeString) {
 
 function createLesson() {
     const form = document.querySelector('#addLesson');
+    const modalElement = document.querySelector('#createLesson');
+    const modal = bootstrap.Modal.getOrCreateInstance(modalElement);
 
     vulOptiesAanmakenLes(klasFetch, teachersFetch);
 
@@ -490,7 +500,8 @@ function createLesson() {
         };
 
         voegLesToe(newLesson);
-        form.submit();
+        refreshData();
+        modal.hide();
     });
 }
 

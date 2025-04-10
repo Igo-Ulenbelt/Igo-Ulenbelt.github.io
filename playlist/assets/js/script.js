@@ -1,5 +1,6 @@
 let songs = [];
 let currentId = 0;
+let currentTitle = "";
 
 function init() {
     fetch('assets/json/songs.json')
@@ -8,6 +9,7 @@ function init() {
             songs = data;
             currentId = parseInt(new URLSearchParams(window.location.search).get('id')) || 1;
             currentId = Math.max(1, Math.min(currentId, songs.length)) - 1;
+            currentTitle = songs[currentId].title;
             render();
         })
         .catch(error => console.error("Fout bij laden van songs.json:", error));
@@ -45,6 +47,7 @@ function render() {
     songs.forEach((song, idx) => {
         const tr = document.createElement("tr");
         const isPlaying = currentId === idx;
+        document.getElementById("title").innerHTML = currentTitle;
         tr.innerHTML = `
             <td class="opacity-7-hover">
                 <a class="${isPlaying ? 'playing' : ''}" href="?id=${idx + 1}">${String(idx + 1).padStart(2, '0')}</a>
