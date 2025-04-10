@@ -1,0 +1,92 @@
+[
+    {
+        "vak": "OOP",
+        "lokaal": "HL15-5.086",
+        "klas": "1",
+        "docenten": [1],
+        "opmerking": "Neem je laptop mee",
+        "datum": "16-04-2025",
+        "startTijd": "12:00",
+        "eindTijd": "14:00"
+    },
+    {
+        "vak": "OOAD",
+        "lokaal": "HL15-5.086",
+        "klas": "1",
+        "docenten": [1],
+        "opmerking": "test",
+        "datum": "18-04-2025",
+        "startTijd": "12:00",
+        "eindTijd": "14:00"
+    },
+    {
+        "vak": "OOAD",
+        "lokaal": "HL15-5.086",
+        "klas": "2",
+        "docenten": [2],
+        "opmerking": "test",
+        "datum": "18-04-2025",
+        "startTijd": "14:00",
+        "eindTijd": "16:00"
+    },
+    {
+        "vak": "OOAD",
+        "lokaal": "HL15-5.086",
+        "klas": "2",
+        "docenten": [1, 2],
+        "opmerking": "test",
+        "datum": "15-04-2025",
+        "startTijd": "12:00",
+        "eindTijd": "14:00"
+    },
+    {
+        "vak": "OOAD",
+        "lokaal": "HL15-5.086",
+        "klas": "1",
+        "docenten": [1, 2],
+        "opmerking": "test",
+        "datum": "18-04-2025",
+        "startTijd": "12:00",
+        "eindTijd": "14:00"
+    },
+    {
+        "vak": "OOAD",
+        "lokaal": "HL15-5.086",
+        "klas": "2",
+        "docenten": [3],
+        "opmerking": "test",
+        "datum": "17-04-2025",
+        "startTijd": "12:00",
+        "eindTijd": "14:00"
+    },
+    {
+        "vak": "OOAD",
+        "lokaal": "HL15-5.086",
+        "klas": "1",
+        "docenten": [1, 2],
+        "opmerking": "test",
+        "datum": "12-04-2025",
+        "startTijd": "15:00",
+        "eindTijd": "16:00"
+    },
+    {
+        "vak": "OOAD",
+        "lokaal": "HL15-5.086",
+        "klas": "2",
+        "docenten": [1, 2],
+        "opmerking": "test",
+        "datum": "08-04-2025",
+        "startTijd": "12:00",
+        "eindTijd": "14:00"
+    },
+    {
+        "vak": "OOP",
+        "lokaal": "HL15-5.088",
+        "klas": "2",
+        "docenten": [3],
+        "opmerking": "Neem je laptop mee",
+        "datum": "05-04-2025",
+        "startTijd": "12:00",
+        "eindTijd": "14:00"
+    }
+]

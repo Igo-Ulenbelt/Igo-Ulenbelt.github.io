@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "naam": "Tict-SD-V1B",
+    "studenten": [0, 1, 2, 3, 4]
+    },
+    {
+    "id": 1,
+    "naam": "Tict-SD-V1C",
+    "studenten": [5, 6, 0, 1, 2, 3]
+    },
+    {
+    "id": 2,
+    "naam": "Tict-SD-V1D",
+    "studenten": [1, 2, 4, 6]
+    }
+]

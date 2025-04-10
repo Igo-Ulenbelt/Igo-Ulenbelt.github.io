@@ -1,0 +1,365 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>Presentie</title>
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<script>
+    var currentUser = sessionStorage.getItem("currentUser");
+    if (currentUser) {
+        currentUser = JSON.parse(currentUser);
+        console.log("Ingelogd als:", currentUser.id + " en is een " + currentUser.type);
+    } else {
+        window.location.href = "index.html";
+    }
+</script>
+<body>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="close btn font-size-25-px" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="close btn font-size-25-px" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="output"></div>
+<div class="container pt-5">
+    <div class="d-flex justify-content-between pb-4 align-items-center">
+        <div id="name" class="font-weight-bold font-size-25-px">Welkom Igo</div>
+        <div class="d-flex">
+            <img id="imageLink" src="" class="opacity-hover-7 rounded-circle width-80-px ms-2" alt="Image" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+            <div class="dropdown">
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a data-bs-toggle="modal" onclick="displayPersonData('student', currentUser.id)" data-bs-target="#personModal" class="dropdown-item" href="#">Presentie</a></li>
+
+                    <li></li>
+                    <li><a id="logoutButton" class="dropdown-item" href="#">Uitloggen</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="border w-100">
+        <div class="d-lg-flex justify-content-between py-2 align-items-center">
+            <div class="d-lg-flex">
+                <div id="week-number" class="px-2">Week 14</div>
+                <div id="week-days" class="px-2">maandag 1 april 2024 - zondag 7 april 2024</div>
+            </div>
+            <div>
+                <button onclick="changeWeek(-1)" class="btn btn-primary mx-2 my-1"><i class="fas fa-arrow-left"></i>
+                </button>
+                <button onclick="changeWeek('now')" class="btn btn-primary mx-2 my-1">Vandaag</button>
+                <button onclick="changeWeek(1)" class="btn btn-primary mx-2 my-1"><i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom">
+        <div class="row row-cols-1 row-cols-md-5 p-0 m-0 justify-content-center">
+            <div class="col border-start border-md-end p-0">
+                <div id="monday" class="border-bottom text-center px-3 py-2"></div>
+                <div class="px-3 py-2 height-60-vh" id="monday-lessons"></div>
+            </div>
+            <div class="col border-start p-0 border-md-end">
+                <div id="tuesday" class="border-bottom border-md-top text-center px-3 py-2"></div>
+                <div class="px-3 py-2 height-60-vh" id="tuesday-lessons"></div>
+            </div>
+            <div class="col border-start p-0 border-md-end">
+                <div id="wednesday" class="border-bottom border-md-top text-center px-3 py-2"></div>
+                <div class="px-3 py-2 height-60-vh" id="wednesday-lessons"></div>
+            </div>
+            <div class="col border-start p-0 border-md-end">
+                <div id="thursday" class="border-bottom border-md-top text-center px-3 py-2"></div>
+                <div class="px-3 py-2 height-60-vh" id="thursday-lessons"></div>
+            </div>
+            <div class="col border-start border-end p-0">
+                <div id="friday" class="border-bottom border-md-top text-center px-3 py-2"></div>
+                <div class="px-3 py-2 height-60-vh" id="friday-lessons"></div>
+            </div>
+        </div>
+    </div>
+    <div class="border-bottom border-start border-end p-2 mb-5 d-flex justify-content-between">
+        <div class="d-flex">
+            <div id="ziekButton"></div>
+            <button class="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#absentModal">Afwezig melden</button>
+        </div>
+<!--        blue button-->
+        <button class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#createLesson">Les aanmaken</button>
+    </div>
+</div>
+
+<!--modals-->
+
+<div class="modal fade" id="createLesson" tabindex="1" role="dialog" aria-labelledby="createLessonModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="width: 80%; max-width: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addLessonModalLabel">Les aanmaken</h5>
+                <button type="button" class="close btn font-size-25-px" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <form id="addLesson" method="POST">
+                    <div class="form-group row">
+                        <div class="mb-3 d-flex">
+                            <label for="inputSubject" class="col-sm-2 col-form-label">Vak:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputSubject" name="subject">
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="inputRoom" class="col-sm-2 col-form-label">Lokaal:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputRoom" name="subject">
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="inputNote" class="col-sm-2 col-form-label">Opmerking:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNote" name="subject">
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="inputDate" class="col-sm-2 col-form-label">Datum:</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputDate" name="date">
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="inputStartTime" class="col-sm-2 col-form-label">Starttijd:</label>
+                            <div class="col-sm-10">
+                                <input type="time" class="form-control" id="inputStartTime" name="startTime">
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="inputEndTime" class="col-sm-2 col-form-label my-3">Eindtijd:</label>
+                            <div class="col-sm-10">
+                                <input type="time" class="form-control" id="inputEndTime" name="endTime">
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="inputGroup" class="col-sm-2 col-form-label">Klas:</label>
+                            <div class="col-sm-10">
+                                <select class="form-select" id="inputGroup" name="class"></select>
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex">
+                            <label for="inputTeacher" class="col-sm-2 col-form-label">Docent:</label>
+                            <div class="col-sm-10">
+                                <select class="form-select" id="inputTeacher" name="teacher"></select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="col-sm-10">
+                                <input type="hidden" class="form-control" id="inputStudentId" name="studentId">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Les aanmaken</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lessonModal" tabindex="-1" role="dialog" aria-labelledby="lessonModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document" style="width: 80%; max-width: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title" id="lessonModalLabel"></h2>
+                    <br>
+                    <h4 id="lessonTime"></h4>
+                </div>
+
+                <button type="button" class="close btn font-size-25-px" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="max-height: 70vh;">
+                <div class="row">
+                    <div class="col-6 border-right border-dark">
+                        <h3>Vak</h3>
+                        <h5 id="lessonSubject"></h5>
+                        <br>
+                        <h3>Lokaal</h3>
+                        <h5 id="lessonRoom"></h5>
+                        <br>
+                        <h3>Opmerking</h3>
+                        <h5 id="lessonNote"></h5>
+                    </div>
+                    <div class="col-6">
+                        <div class="h-50 border-bottom border-dark overflow-auto" style="max-height: 30vh;">
+                            <h3>Klas</h3>
+                            <div id="klasStudents" class="col-12 text-center d-flex">
+
+                            </div>
+                            <h5 id="lessonGroup"></h5>
+                        </div>
+                        <div class="h-50 overflow-auto" style="max-height: 30vh;">
+                            <h3>Docenten</h3>
+                            <div class="row">
+                                <h5 class="d-flex" id="lessonTeachers"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--group modal-->
+<div class="modal fade" id="groupModal" tabindex="-1" role="dialog" aria-labelledby="personModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document" style="width: 80%; max-width: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="groupName"></h5>
+                <button type="button" class="close btn font-size-25-px" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body overflow-auto" style="max-height: 70vh;">
+                <div class="row justify-content-center">
+                    <div class="col-12 row justify-content-center">
+                        <div id="groupStudents" class="col-12 text-center d-flex">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-labelledby="personModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document" style="width: 80%; max-width: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="personModalLabel">Student/Docent</h5>
+                <button type="button" class="close btn font-size-25-px" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="row justify-content-center">
+                            <div class="col-12 row justify-content-center">
+                                <div class="col-6">
+                                    <img id="personImage"
+                                         src="https://www.anderson-bogert.com/wp-content/uploads/2015/02/KrasinskiAG0111.jpg"
+                                         alt="John Krasinski" class="img-fluid rounded border-dark border">
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <h2 id="personName"></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7" id="presentie">
+                        <h3>Presentie</h3>
+                        <div id="progress" class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" id="personAttendanceBar"
+                                 style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"
+                                 data-toggle="tooltip" data-placement="top" title="30%">
+                            </div>
+                            <div class="progress-bar bg-danger" role="progressbar" id="personAbsentBar"
+                                 style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                 data-toggle="tooltip" data-placement="top" title="20%">
+                            </div>
+                        </div>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">Vak</th>
+                                <th scope="col">Tijd</th>
+                                <th scope="col">Datum</th>
+                                <th scope="col">Aanwezig</th>
+                            </tr>
+                            </thead>
+                            <tbody id="personAttendance">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade " id="absentModal" tabindex="-1" role="dialog" aria-labelledby="absentModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="absentModalLabel">Absent</h5>
+                <button type="button" class="close btn font-size-25-px" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <form id="addAbsent" method="POST">
+                    <div class="form-group row mb-3">
+                        <label for="inputFromDate" class="col-sm-2 col-form-label">Van:</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" id="inputFromDate" name="fromDate">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="inputToDate" class="col-sm-2 col-form-label">Tot:</label>
+                        <div class="col-sm-10">
+                            <input type="datetime-local" class="form-control" id="inputToDate" name="toDate">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="inputReason">Reden:</label>
+                        <textarea class="form-control"  id="inputReason" rows="3" name="reason"></textarea>
+                    </div>
+                    <input type="hidden" id="studentId" name="studentId" value="">
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/global.js"></script>
+
+</body>
+</html>

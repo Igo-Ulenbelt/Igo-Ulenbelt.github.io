@@ -1,0 +1,42 @@
+[
+    {
+        "persoon": 4,
+        "reden": "vakantie",
+        "startDatum": "04-04-2025",
+        "eindDatum": "15-04-2025",
+        "startTijd": "11:00",
+        "eindTijd": "12:00"
+    },
+    {
+        "persoon": 1,
+        "reden": "ziek",
+        "startDatum": "13-04-2025",
+        "eindDatum": "15-04-2025",
+        "startTijd": "02:07",
+        "eindTijd": "02:07"
+    },
+    {
+        "persoon": 2,
+        "reden": "vakantie",
+        "startDatum": "12-04-2025",
+        "eindDatum": "13-04-2025",
+        "startTijd": "11:18",
+        "eindTijd": "14:01"
+    },
+    {
+        "persoon": 1,
+        "reden": "vakantie",
+        "startDatum": "12-04-2025",
+        "eindDatum": "18-04-2025",
+        "startTijd": "11:21",
+        "eindTijd": "13:59"
+    },
+    {
+        "persoon": 1,
+        "reden": "ziek",
+        "startDatum": "09-04-2025",
+        "eindDatum": "11-04-2025",
+        "startTijd": "00:40",
+        "eindTijd": "00:40"
+    }
+]

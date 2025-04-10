@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "naam": "Ms. Smith",
+    "achterNaam": "test",
+    "adres": "Kerkstraat 1",
+    "woonplaats": "Amsterdam",
+    "postcode": "1234 AB",
+    "email": "test@gmail.com",
+    "geboorteDatum": "1990-01-01",
+    "isZiek": false,
+    "plaatje": "people/eva.jpg",
+    "wachtwoord": "testdocent"
+  },
+  {
+    "id": 2,
+    "naam": "Mr. Johnson",
+    "achterNaam": "test",
+    "adres": "Kerkstraat 1",
+    "woonplaats": "Amsterdam",
+    "postcode": "1234 AB",
+    "email": "test@gmail.com",
+    "geboorteDatum": "1990-01-01",
+    "isZiek": false,
+    "plaatje": "people/jazz.jpg",
+    "wachtwoord": "testdocent"
+    
+  },
+  {
+    "id": 3,
+    "naam": "Mr. Clark",
+    "achterNaam": "test",
+    "adres": "Kerkstraat 1",
+    "woonplaats": "Amsterdam",
+    "postcode": "1234 AB",
+    "email": "test@gmail.com",
+    "geboorteDatum": "1990-01-01",
+    "isZiek": false,
+    "plaatje": "people/jazz.jpg",
+    "wachtwoord": "testdocent"
+    
+  }
+]

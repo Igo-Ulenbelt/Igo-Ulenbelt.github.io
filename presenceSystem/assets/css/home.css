@@ -1,0 +1,36 @@
+@media only screen and (max-width: 767px) {
+    .height-60-vh {
+        min-height: auto !important;
+    }
+
+    .border-md-top {
+        border-top: 1px solid #e9ecef;
+    }
+
+    .border-md-end {
+        border-right: 1px solid #e9ecef;
+    }
+}
+
+.opacity-hover-7:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.height-60-vh {
+    min-height: 60vh;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-size-25-px {
+    font-size: 25px;
+}
+
+.width-80-px {
+    width: 50px;
+    height: 50px;
+    background: black;
+}
