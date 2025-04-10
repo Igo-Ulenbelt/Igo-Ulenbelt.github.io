@@ -2,6 +2,10 @@ let songs = [];
 let currentId = 0;
 let currentTitle = "";
 
+document.addEventListener('DOMContentLoaded', () => {
+    stop()
+});
+
 function init() {
     fetch('assets/json/songs.json')
         .then(response => response.json())
@@ -77,5 +81,32 @@ function goToNext() {
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.prev').addEventListener('click', goToPrev);
+    document.querySelector('.start').addEventListener('click', () => {
+        start()
+    });
+    document.querySelector('.stop').addEventListener('click', () => {
+        stop()
+    });
     document.querySelector('.next').addEventListener('click', goToNext);
 });
+
+function start() {
+    const audioPlayer = document.getElementById("audioPlayer");
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+    } else {
+        audioPlayer.pause();
+    }
+
+    document.querySelector('.start').classList.add('d-none');
+    document.querySelector('.stop').classList.remove('d-none');
+}
+
+function stop() {
+    const audioPlayer = document.getElementById("audioPlayer");
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0;
+
+    document.querySelector('.start').classList.remove('d-none');
+    document.querySelector('.stop').classList.add('d-none');
+}
