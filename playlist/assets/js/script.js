@@ -2,10 +2,6 @@ let songs = [];
 let currentId = 0;
 let currentTitle = "";
 
-document.addEventListener('DOMContentLoaded', () => {
-    stop()
-});
-
 function init() {
     fetch('assets/json/songs.json')
         .then(response => response.json())
