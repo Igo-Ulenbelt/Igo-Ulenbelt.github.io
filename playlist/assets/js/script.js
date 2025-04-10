@@ -101,7 +101,6 @@ function start() {
 function stop() {
     const audioPlayer = document.getElementById("audioPlayer");
     audioPlayer.pause();
-    audioPlayer.currentTime = 0;
 
     document.querySelector('.start').classList.remove('d-none');
     document.querySelector('.stop').classList.add('d-none');
