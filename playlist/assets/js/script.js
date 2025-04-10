@@ -65,12 +65,14 @@ function render() {
 
 function goToPrev() {
     currentId = (currentId - 1 + songs.length) % songs.length;
+    currentTitle = songs[currentId].title;
     render();
     history.pushState(null, "", "?id=" + (currentId + 1));
 }
 
 function goToNext() {
     currentId = (currentId + 1) % songs.length;
+    currentTitle = songs[currentId].title;
     render();
     history.pushState(null, "", "?id=" + (currentId + 1));
 }
