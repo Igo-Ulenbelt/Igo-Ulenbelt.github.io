@@ -10,11 +10,7 @@ export default defineConfig({
   build: {
     assetsInclude: ['**/*.json'],
     rollupOptions: {
-      output: {
-        manualChunks: {
-          translations: ['./public/json/translations/**/*.json']
-        }
-      }
+
     }
   }
 });
