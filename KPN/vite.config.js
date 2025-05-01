@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/frontend-project-v2b_letsgo/',
+  base: '/kpn/',
   server: {
     fs: {
       strict: false  
