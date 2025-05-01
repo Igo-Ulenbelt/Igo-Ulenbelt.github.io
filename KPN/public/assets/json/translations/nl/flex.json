@@ -1,0 +1,32 @@
+{
+  "title": "FLEX",
+  "description": "Hier kun je jouw virtuele aandelen beheren, de extra pensioenbijdrage inzien, en jouw maandelijkse vakantiegeld / 13e maand bedragen inzien.",
+  "remainingAmount": "Resterende bedrag:",
+  "spentAmount": "Uitgegeven bedrag:",
+  "sections": {
+    "shares": {
+      "title": "Mijn Aandelen",
+      "nextPayout": "Volgende uitbetaling: 01 / 04 / 2025",
+      "currentYear": "Huidige jaar: 1 jaar (bij 3 jaar, 30%)",
+      "button": "Aandelen beheren"
+    },
+    "holidayAllowance": {
+      "title": "Vakantiegeld / 13e Maand",
+      "monthlyHolidayAllowance": "Maandelijks vakantiegeld (8%): €0,-",
+      "thirteenthMonth": "13e maand (2%): €0,-",
+      "withdrawLabel": "Opnemen:",
+      "saveLabel": "Sparen:"
+    },
+    "salesPlan": {
+      "title": "Mijn Salesplan",
+      "description": "Je kunt ervoor kiezen om deze te nemen aan de KPN plan (0-16.33%) of extra te investeren in [medewerkers Retail & Sales]:",
+      "button": "Deelnemen"
+    },
+    "pensionContribution": {
+      "title": "Pensioeninvestering",
+      "description": "Vanaf 2026 max. 3% inleggen voor KPN flex en boost, zodat je meer kan beleggen en pensioen kan bouwen.",
+      "contributionLabel": "Bijdrage: €",
+      "button": "Geld inleggen"
+    }
+  }
+}

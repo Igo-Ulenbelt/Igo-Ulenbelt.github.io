@@ -1,0 +1,197 @@
+[
+    {
+        "category": "General CAO Information",
+        "tips": [
+            {
+                "id": "en-1",
+                "text": "The CAO applies to all employees with an employment contract in the European part of the Netherlands.",
+                "link": ""
+            },
+            {
+                "id": "en-2",
+                "text": "The CAO came into effect on January 1, 2024.",
+                "link": ""
+            },
+            {
+                "id": "en-3",
+                "text": "The CAO can be modified by mutual agreement between employer and employee.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Employment Contract",
+        "tips": [
+            {
+                "id": "en-4",
+                "text": "Your employment contract must be in writing.",
+                "link": ""
+            },
+            {
+                "id": "en-5",
+                "text": "Internal candidates are preferred for vacancies unless business interests dictate otherwise.",
+                "link": ""
+            },
+            {
+                "id": "en-6",
+                "text": "The employer covers the costs of any required medical examinations.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Salary & Benefits",
+        "tips": [
+            {
+                "id": "en-7",
+                "text": "Your salary is determined by the salary scale corresponding to your position.",
+                "link": ""
+            },
+            {
+                "id": "en-8",
+                "text": "Salary is paid monthly by the employer.",
+                "link": ""
+            },
+            {
+                "id": "en-9",
+                "text": "You may be eligible for salary supplements, which are also paid monthly.",
+                "link": ""
+            },
+            {
+                "id": "en-10",
+                "text": "Various allowances may be available depending on your position and circumstances.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Working Hours & Leave",
+        "tips": [
+            {
+                "id": "en-11",
+                "text": "Your working hours follow the employer's working time regulations.",
+                "link": ""
+            },
+            {
+                "id": "en-12",
+                "text": "The employer may modify working time regulations.",
+                "link": ""
+            },
+            {
+                "id": "en-13",
+                "text": "You are entitled to leave according to the employer's leave regulations.",
+                "link": ""
+            },
+            {
+                "id": "en-14",
+                "text": "Sick leave must be reported to your employer immediately.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Termination",
+        "tips": [
+            {
+                "id": "en-15",
+                "text": "Either party may terminate the employment contract.",
+                "link": ""
+            },
+            {
+                "id": "en-16",
+                "text": "You are entitled to severance pay if terminated.",
+                "link": ""
+            },
+            {
+                "id": "en-17",
+                "text": "The employer must follow specific termination procedures.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Confidentiality & Property",
+        "tips": [
+            {
+                "id": "en-18",
+                "text": "You must maintain confidentiality of information entrusted to you.",
+                "link": ""
+            },
+            {
+                "id": "en-19",
+                "text": "You need employer permission for any side activities.",
+                "link": ""
+            },
+            {
+                "id": "en-20",
+                "text": "You must use employer property carefully and responsibly.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Disputes & Changes",
+        "tips": [
+            {
+                "id": "en-21",
+                "text": "Disputes should first be resolved through mutual consultation.",
+                "link": ""
+            },
+            {
+                "id": "en-22",
+                "text": "The CAO can be modified by either party with mutual agreement.",
+                "link": ""
+            },
+            {
+                "id": "en-23",
+                "text": "The AAC-DO handles disputes between parties.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Pension & Benefits",
+        "tips": [
+            {
+                "id": "en-24",
+                "text": "The ABP manages pension benefits for employees.",
+                "link": ""
+            },
+            {
+                "id": "en-25",
+                "text": "Your pension rights are based on your employment history.",
+                "link": ""
+            },
+            {
+                "id": "en-26",
+                "text": "Additional benefits may be available beyond basic unemployment benefits.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Special Provisions",
+        "tips": [
+            {
+                "id": "en-27",
+                "text": "The AOW eligibility age determines when state pension benefits begin.",
+                "link": ""
+            },
+            {
+                "id": "en-28",
+                "text": "Your employment history affects your unemployment benefits.",
+                "link": ""
+            },
+            {
+                "id": "en-29",
+                "text": "Special provisions apply to employees working abroad.",
+                "link": ""
+            },
+            {
+                "id": "en-30",
+                "text": "The CAO includes specific provisions for former employees receiving benefits.",
+                "link": ""
+            }
+        ]
+    }
+]

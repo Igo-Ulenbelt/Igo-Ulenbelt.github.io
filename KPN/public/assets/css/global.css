@@ -1,0 +1,65 @@
+/*import font in src/assets/css/kpnBold.tff */
+
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    --kpn-white: #ffffff;
+    --kpn-light-gray: #f5f5f5;
+    --kpn-gray: #8f8f8f;
+    --kpn-black: #000000;
+    --kpn-green: #00c300;
+    --kpn-green-hover: #00e000;
+    --kpn-blue: #0066ee;
+    --kpn-blue-hover: #3385f1;
+    --kpn-yellow: #df4;
+    --kpn-yellow-hover: #edff9a;
+}
+
+[data-theme="dark"] {
+    --kpn-white: #232323;
+    --kpn-black: #ffffff;
+    --kpn-light-gray: #191919;
+}
+
+@font-face {
+    font-family: 'kpnBold';
+    src: url('kpnBold.woff2') format('truetype');
+}
+
+@font-face {
+    font-family: 'kpnRegular';
+    src: url('kpnRegular.woff2') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'kpnRegular', sans-serif;
+}
+
+h1 {
+    font-family: 'kpnBold', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--kpn-white);
+    background-color: var(--kpn-green);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+}

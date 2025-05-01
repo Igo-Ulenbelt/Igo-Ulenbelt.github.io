@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "inlay": 1000,
+        "createdAt": "2024-01-01 00:00:00",
+        "updatedAt": "2024-01-01 00:00:00",
+        "deletedAt": null
+    },
+    {
+        "id": 2,
+        "userId": 2,
+        "inlay": 2000,
+        "createdAt": "2024-01-01 00:00:00",
+        "updatedAt": "2024-01-01 00:00:00",
+        "deletedAt": null
+    }
+]

@@ -1,0 +1,33 @@
+{
+  "title": "My CAO",
+  "description": "Here you can find more information about the introduction of the new CAO and the choices you can make within the KPN Flex and Boost plans.",
+  "sections": {
+    "flex": {
+      "title": "FLEX",
+      "listItems": [
+        "Monthly payment of holiday allowance (8%) and thirteenth month (2%, from January 2025 6.33%)",
+        "Participation in KPN plan or KPN sales plan/retail plan",
+        "Purchase virtual shares",
+        "Additional pension contribution (from 2026)"
+      ],
+      "button": "Learn more"
+    },
+    "boost": {
+      "title": "BOOST",
+      "listItems": [
+        "Invest €1250 in physical and mental well-being (per year)",
+        "Invest €5000 in making your home more sustainable (per 3 years)",
+        "Pay off up to €5000 of your student debt (per 2 years)",
+        "Save for a 2-month sabbatical (per 5 years)",
+        "Union contribution"
+      ],
+      "button": "Learn more"
+    }
+  },
+  "questionnaire": "Need help making your choice? Take this questionnaire!",
+  "questionnaireButton": "Fill out a questionnaire",
+  "tips": {
+    "title": "Quick tip",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+}

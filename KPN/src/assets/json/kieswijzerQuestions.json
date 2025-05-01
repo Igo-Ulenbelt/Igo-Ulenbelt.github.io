@@ -1,0 +1,20 @@
+[
+  {"question": "Ik vind duurzaamheid belangrijk.", "category": "Duurzaamheid" },
+  {"question": "Ik zou graag mijn woning willen verduurzamen.", "category": "Duurzaamheid" },
+  {"question": "Ik heb nog een lopende studieschuld.", "category": "Sparen & Schulden" },
+  {"question": "Ik zou graag meer willen sparen voor mijn pensioen.", "category": "Sparen & Schulden" },
+  {"question": "Ik steun regelmatig goede doelen / draag bij aan een vakbondscontributie.", "category": "Goede doelen & Vrijwilligerswerk" },
+  {"question": "Ik houd van een risico.", "category": "Risico & Gokken" },
+  {"question": "Ik ben betrokken bij goede doelen/vrijwilligerswerk", "category": "Goede doelen & Vrijwilligerswerk" },
+  {"question": "Ik vind kunst en cultuur belangrijk", "category": "Kunst & Cultuur" },
+  {"question": "Ik bezoek regelmatig musea", "category": "Kunst & Cultuur" },
+  {"question": "Ik ben geïnteresseerd in technologische ontwikkelingen", "category": "Technologieen" },
+  {"question": "Ik vind onderwijs belangrijk", "category": "Onderwijs" },
+  {"question": "Ik ben betrokken bij het onderwijs", "category": "Onderwijs" },
+  {"question": "Ik volg regelmatig politieke ontwikkelingen", "category": "Politiek & Maatschappij" },
+  {"question": "Ik vind politiek belangrijk", "category": "Politiek & Maatschappij" },
+  {"question": "Ik vind natuur en milieu belangrijk", "category": "Natuur & Milieu" },
+  {"question": "Ik sport regelmatig", "category": "Sport & Gezondheid" },
+  {"question": "Ik vind gezondheid belangrijk", "category": "Sport & Gezondheid" },
+  {"question": "Ik bevind mezelf vaak in de natuur", "category": "Natuur & Milieu" }
+]

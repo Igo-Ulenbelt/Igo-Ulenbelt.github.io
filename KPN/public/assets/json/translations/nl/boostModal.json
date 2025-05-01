@@ -1,0 +1,15 @@
+{
+  "title": "Boost aanvragen",
+  "close": "Sluiten",
+  "typeLabel": "Type",
+  "amountLabel": "Bedrag (max: €{remainingAmount})",
+  "proofLabel": "Bewijs",
+  "descriptionLabel": "Beschrijving",
+  "submitButton": "Aanvragen",
+  "errorAmount": "Bedrag moet tussen 0 en €{remainingAmount} zijn",
+  "errorProof": "Bewijs is verplicht",
+  "confirmUpdate": "Je hebt al voor deze type aangevraagd. Wil je hem aanpassen?",
+  "boostUpdated": "Boost is aangepast",
+  "boostNotUpdated": "De boost is niet aangepast.",
+  "boostRequested": "Boost aangevraagd"
+}

@@ -1,0 +1,197 @@
+[
+    {
+        "category": "Algemene CAO Informatie",
+        "tips": [
+            {
+                "id": "nl-1",
+                "text": "De CAO is van toepassing op alle werknemers met een arbeidsovereenkomst in het Europese deel van Nederland.",
+                "link": ""
+            },
+            {
+                "id": "nl-2",
+                "text": "De CAO is ingegaan op 1 januari 2024.",
+                "link": ""
+            },
+            {
+                "id": "nl-3",
+                "text": "De CAO kan worden gewijzigd door onderling overleg tussen werkgever en werknemer.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Arbeidsovereenkomst",
+        "tips": [
+            {
+                "id": "nl-4",
+                "text": "Uw arbeidsovereenkomst moet schriftelijk worden vastgelegd.",
+                "link": ""
+            },
+            {
+                "id": "nl-5",
+                "text": "Interne kandidaten hebben voorrang bij vacatures, tenzij bedrijfsbelangen anders vereisen.",
+                "link": ""
+            },
+            {
+                "id": "nl-6",
+                "text": "De werkgever draagt de kosten van eventuele vereiste medische keuringen.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Salaris & Vergoedingen",
+        "tips": [
+            {
+                "id": "nl-7",
+                "text": "Uw salaris wordt bepaald door de salarisschaal die bij uw functie hoort.",
+                "link": ""
+            },
+            {
+                "id": "nl-8",
+                "text": "Het salaris wordt maandelijks door de werkgever uitbetaald.",
+                "link": ""
+            },
+            {
+                "id": "nl-9",
+                "text": "U kunt in aanmerking komen voor salaristoeslagen, die ook maandelijks worden uitbetaald.",
+                "link": ""
+            },
+            {
+                "id": "nl-10",
+                "text": "Verschillende vergoedingen kunnen beschikbaar zijn, afhankelijk van uw functie en omstandigheden.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Werkuren & Verlof",
+        "tips": [
+            {
+                "id": "nl-11",
+                "text": "Uw werktijden volgen de werktijdenregeling van de werkgever.",
+                "link": ""
+            },
+            {
+                "id": "nl-12",
+                "text": "De werkgever kan de werktijdenregeling wijzigen.",
+                "link": ""
+            },
+            {
+                "id": "nl-13",
+                "text": "U heeft recht op verlof volgens de verlofregeling van de werkgever.",
+                "link": ""
+            },
+            {
+                "id": "nl-14",
+                "text": "Ziekteverlof moet direct aan de werkgever worden gemeld.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Ontslag",
+        "tips": [
+            {
+                "id": "nl-15",
+                "text": "Beide partijen kunnen de arbeidsovereenkomst beëindigen.",
+                "link": ""
+            },
+            {
+                "id": "nl-16",
+                "text": "U heeft recht op een ontslagvergoeding bij beëindiging.",
+                "link": ""
+            },
+            {
+                "id": "nl-17",
+                "text": "De werkgever moet specifieke ontslagprocedures volgen.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Geheimhouding & Eigendommen",
+        "tips": [
+            {
+                "id": "nl-18",
+                "text": "U moet vertrouwelijke informatie geheim houden.",
+                "link": ""
+            },
+            {
+                "id": "nl-19",
+                "text": "U heeft toestemming van de werkgever nodig voor nevenwerkzaamheden.",
+                "link": ""
+            },
+            {
+                "id": "nl-20",
+                "text": "U moet eigendommen van de werkgever zorgvuldig gebruiken.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Geschillen & Wijzigingen",
+        "tips": [
+            {
+                "id": "nl-21",
+                "text": "Geschillen moeten eerst worden opgelost door onderling overleg.",
+                "link": ""
+            },
+            {
+                "id": "nl-22",
+                "text": "De CAO kan door beide partijen worden gewijzigd met onderling overleg.",
+                "link": ""
+            },
+            {
+                "id": "nl-23",
+                "text": "De AAC-DO behandelt geschillen tussen partijen.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Pensioen & Uitkeringen",
+        "tips": [
+            {
+                "id": "nl-24",
+                "text": "Het ABP beheert de pensioenuitkeringen voor werknemers.",
+                "link": ""
+            },
+            {
+                "id": "nl-25",
+                "text": "Uw pensioenrechten zijn gebaseerd op uw arbeidsverleden.",
+                "link": ""
+            },
+            {
+                "id": "nl-26",
+                "text": "Aanvullende uitkeringen kunnen beschikbaar zijn naast de basiswerkloosheidsuitkering.",
+                "link": ""
+            }
+        ]
+    },
+    {
+        "category": "Speciale Bepalingen",
+        "tips": [
+            {
+                "id": "nl-27",
+                "text": "De AOW-gerechtigde leeftijd bepaalt wanneer de AOW-uitkering ingaat.",
+                "link": ""
+            },
+            {
+                "id": "nl-28",
+                "text": "Uw arbeidsverleden beïnvloedt uw werkloosheidsuitkering.",
+                "link": ""
+            },
+            {
+                "id": "nl-29",
+                "text": "Speciale bepalingen zijn van toepassing op werknemers die in het buitenland werken.",
+                "link": ""
+            },
+            {
+                "id": "nl-30",
+                "text": "De CAO bevat specifieke bepalingen voor oud-werknemers die uitkeringen ontvangen.",
+                "link": ""
+            }
+        ]
+    }
+]

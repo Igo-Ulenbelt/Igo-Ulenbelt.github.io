@@ -1,0 +1,116 @@
+{
+    "title": "Flex & Boost Uitleg",
+    "lastUpdated": "Laatst bijgewerkt op:",
+    "readMore": "Lees meer",
+    "readLess": "Lees minder",
+    "flex": {
+        "title": "Flex",
+        "items": [
+            {
+                "id": "flex-1",
+                "position": 1,
+                "title": "Geen keuze maken",
+                "text": "Als je geen keuze maakt, doe je automatisch mee met het KPN Plan.",
+                "action": {
+                    "url": "flex.html",
+                    "label": "Aan de slag"
+                }
+            },
+            {
+                "id": "flex-2",
+                "position": 2,
+                "title": "KPN Plan",
+                "text": "Het standaardplan waarbij je je salaris en secundaire voorwaarden ontvangt.",
+                "action": {
+                    "url": "flex.html",
+                    "label": "Aan de slag"
+                }
+            },
+            {
+                "id": "flex-3",
+                "position": 3,
+                "title": "KPN Salesplan",
+                "text": "Speciaal plan voor sales medewerkers met extra voorwaarden.",
+                "action": {
+                    "url": "flex.html",
+                    "label": "Aan de slag"
+                }
+            },
+            {
+                "id": "flex-4",
+                "position": 4,
+                "title": "Virtuele aandelen",
+                "text": "Optie om een deel van je salaris te investeren in virtuele KPN aandelen.",
+                "action": {
+                    "url": "flex.html",
+                    "label": "Aan de slag"
+                }
+            },
+            {
+                "id": "flex-5",
+                "position": 5,
+                "title": "Pensioen sparen (vanaf 2026)",
+                "text": "Optie om extra bedragen te sparen voor je pensioen.",
+                "action": {
+                    "url": "flex.html",
+                    "label": "Aan de slag"
+                }
+            }
+        ]
+    },
+    "boost": {
+        "title": "Boost",
+        "items": [
+            {
+                "id": "boost-1",
+                "position": 1,
+                "title": "Fysiek en mentaal welzijn",
+                "text": "Investeer in je gezondheid met een budget voor wellness activiteiten.",
+                "action": {
+                    "url": "boost.html",
+                    "label": "Aan de slag"
+                }
+            },
+            {
+                "id": "boost-2",
+                "position": 2,
+                "title": "Verduurzaming woning",
+                "text": "Maak je huis duurzamer met een speciaal budget.",
+                "action": {
+                    "url": "boost.html",
+                    "label": "Aan de slag"
+                }
+            },
+            {
+                "id": "boost-3",
+                "position": 3,
+                "title": "Studieschuld aflossen",
+                "text": "Los je studieschuld sneller af met deze optie.",
+                "action": {
+                    "url": "boost.html",
+                    "label": "Aan de slag"
+                }
+            },
+            {
+                "id": "boost-4",
+                "position": 4,
+                "title": "Sabbatical nemen",
+                "text": "Spaar voor een sabbatical van 2 maanden elke 5 jaar.",
+                "action": {
+                    "url": "boost.html",
+                    "label": "Aan de slag"
+                }
+            },
+            {
+                "id": "boost-5",
+                "position": 5,
+                "title": "Vakbondscontributie",
+                "text": "Draag bij aan je vakbondslidmaatschap via deze optie.",
+                "action": {
+                    "url": "boost.html",
+                    "label": "Aan de slag"
+                }
+            }
+        ]
+    }
+}

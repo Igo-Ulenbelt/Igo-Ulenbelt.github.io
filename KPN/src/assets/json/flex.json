@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "salary": 55000,
+        "shares": {
+            "payoutDate": "10/11/2025",
+            "currentYear": 2025,
+            "sharesAmount": 10,
+            "amountWaiting": 1000,
+            "amountSpent": 300
+        },
+        "salesplan": {
+        },
+        "pension": {
+            "amount": 0,
+            "percentageNextYear": 0
+        }
+    }
+]

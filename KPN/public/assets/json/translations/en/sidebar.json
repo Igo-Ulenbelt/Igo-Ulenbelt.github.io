@@ -1,0 +1,30 @@
+{
+  "links": {
+    "home": "Home",
+    "flexBoost": "Explanation",
+    "boost": "Boost",
+    "flex": "Flex",
+    "votingAdvice": "Questionnaire",
+    "cao": "CAO",
+    "myKpn": "My KPN"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "nl": "Dutch",
+    "en": "English"
+  },
+  "logout": "Logout",
+  "liveRegion": {
+    "home": "on the home page",
+    "flexBoost": "on the flex and boest page",
+    "boost": "on the boost page",
+    "flex": "on the flex page",
+    "votingAdvice": "on the questionnaire page",
+    "cao": "on the CAO page",
+    "myKpn": "on the My KPN page",
+    "default": "on a page"
+  }
+}

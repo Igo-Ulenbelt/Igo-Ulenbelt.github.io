@@ -1,0 +1,32 @@
+{
+  "title": "FLEX",
+  "description": "Here you can manage your virtual shares, view the additional pension contribution, and see your monthly holiday allowance / 13th-month amounts.",
+  "remainingAmount": "Remaining amount:",
+  "spentAmount": "Spent amount:",
+  "sections": {
+    "shares": {
+      "title": "My Shares",
+      "nextPayout": "Next payout: 01 / 04 / 2025",
+      "currentYear": "Current year: 1 year (at 3 years, 30%)",
+      "button": "Manage Shares"
+    },
+    "holidayAllowance": {
+      "title": "Holiday Allowance / 13th Month",
+      "monthlyHolidayAllowance": "Monthly holiday allowance (8%): €0,-",
+      "thirteenthMonth": "13th month (2%): €0,-",
+      "withdrawLabel": "Withdraw:",
+      "saveLabel": "Save:"
+    },
+    "salesPlan": {
+      "title": "My Sales Plan",
+      "description": "You can choose to follow the KPN plan (0-16.33%) or invest extra in [Retail & Sales employees]:",
+      "button": "Participate"
+    },
+    "pensionContribution": {
+      "title": "Pension Investment",
+      "description": "From 2026, you can contribute up to 3% to KPN Flex and Boost to invest more and build a pension.",
+      "contributionLabel": "Contribution: €",
+      "button": "Deposit Funds"
+    }
+  }
+}

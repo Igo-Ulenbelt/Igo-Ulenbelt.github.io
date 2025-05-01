@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "userId": 1,
+        "boostTypeId": 1,
+        "inlay": 100,
+        "proof": "https://www.example.com/proof",
+        "accepted": true,
+        "createdAt": "2024-01-01 12:00:00",
+        "acceptedAt": "2024-02-01 12:00:00",
+        "updatedAt": "2024-01-01 12:00:00",
+        "deletedAt": null
+    },
+    {
+        "id": 2,
+        "userId": 2,
+        "boostTypeId": 2,
+        "inlay": 200,
+        "proof": "https://www.example.com/proof",
+        "accepted": false,
+        "createdAt": "2024-01-01 12:00:00",
+        "acceptedAt": null,
+        "updatedAt": "2024-01-01 12:00:00",
+        "deletedAt": null
+    },
+    {
+        "id": 3,
+        "userId": 3,
+        "boostTypeId": 3,
+        "inlay": 300,
+        "proof": "https://www.example.com/proof",
+        "accepted": false,
+        "createdAt": "2024-01-01 12:00:00",
+        "acceptedAt": "2024-02-01 12:00:00",
+        "updatedAt": "2024-01-01 12:00:00",
+        "deletedAt": null
+    }
+]
